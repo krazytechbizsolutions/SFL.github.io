@@ -1,3 +1,42 @@
 //BEGIN header
 header.header
-//END header
+  .menu-open
+    span
+  .header__logo
+    img(src="https://via.placeholder.com/200x30", alt="")
+  a(href="#")
+    +icon('search')
+
+.mobile-menu
+  a(href="#").mobile-menu__close
+    +icon('close')
+  .mobile-menu__content
+    .mobile-menu__avatar
+      img(src="img/home/user.png", alt="")
+    h2 Rajesh Kumar
+      a(href="mailto:rajesh@sfl.com") @ rajesh@sfl.com
+    ul
+      li
+        a(href="#")
+          +icon('home')
+          | Home Home
+      li
+        a(href="#")
+          +icon('event')
+          | Home Home
+      li
+        a(href="#").active
+          +icon('location')
+          | Home Home
+      li
+        a(href="#")
+          +icon('user')
+          | Home Home
+      li
+        a(href="#")
+          +icon('information')
+          | Home Home
+    a(href="#").log-out 
+      +icon('logout')
+      | Log Out
+  //END header

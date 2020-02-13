@@ -10,12 +10,15 @@ html
       block header
         include ../partials/_header
       block content
-      block footer
-        include ../partials/_footer
+      //- block footer
+      //-   include ../partials/_footer
       block pop-up
         include ../partials/_pop-up
     //END out
 
     //LOAD SCRIPTS
     block scripts
+      script(src="https://www.amcharts.com/lib/4/core.js")
+      script(src="https://www.amcharts.com/lib/4/charts.js")
+      script(src="https://www.amcharts.com/lib/4/themes/animated.js")
       script(type="text/javascript" src="js/app.js")

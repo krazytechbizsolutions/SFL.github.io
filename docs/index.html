@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <title>Index Page</title>
     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" id="viewport" content="width=415, minimum-scale=0.3, maximum-scale=3, user-scalable=no">
     <meta name="theme-color" content="#fff">
     <meta name="format-detection" content="telephone=no">
     <link rel="stylesheet" media="all" href="css/app.css">
@@ -13,16 +13,350 @@
     <!--BEGIN out-->
     <div class="out">
       <!--BEGIN header-->
-      <header class="header"></header>
-      <!--END header-->
-      <!-- partial example-->
-      <section class="home-intro"></section>
-      <!--BEGIN footer-->
-      <footer class="footer"></footer>
-      <!--END footer-->
+      <header class="header">
+        <div class="menu-open"><span></span></div>
+        <div class="header__logo"><img src="https://via.placeholder.com/200x30" alt=""></div><a href="#"><svg class="icon icon-search ">
+            <use xlink:href="img/sprite.svg#icon-search"></use>
+          </svg></a>
+      </header>
+      <div class="mobile-menu"><a class="mobile-menu__close" href="#"><svg class="icon icon-close ">
+            <use xlink:href="img/sprite.svg#icon-close"></use>
+          </svg></a>
+        <div class="mobile-menu__content">
+          <div class="mobile-menu__avatar"><img src="img/home/user.png" alt=""></div>
+          <h2>Rajesh Kumar<a href="mailto:rajesh@sfl.com">@ rajesh@sfl.com</a></h2>
+          <ul>
+            <li><a href="#"><svg class="icon icon-home ">
+                  <use xlink:href="img/sprite.svg#icon-home"></use>
+                </svg>Home Home</a></li>
+            <li><a href="#"><svg class="icon icon-event ">
+                  <use xlink:href="img/sprite.svg#icon-event"></use>
+                </svg>Home Home</a></li>
+            <li><a class="active" href="#"><svg class="icon icon-location ">
+                  <use xlink:href="img/sprite.svg#icon-location"></use>
+                </svg>Home Home</a></li>
+            <li><a href="#"><svg class="icon icon-user ">
+                  <use xlink:href="img/sprite.svg#icon-user"></use>
+                </svg>Home Home</a></li>
+            <li><a href="#"><svg class="icon icon-information ">
+                  <use xlink:href="img/sprite.svg#icon-information"></use>
+                </svg>Home Home</a></li>
+          </ul><a class="log-out" href="#"> <svg class="icon icon-logout ">
+              <use xlink:href="img/sprite.svg#icon-logout"></use>
+            </svg>Log Out</a>
+        </div>
+        <!--END header-->
+      </div><!-- partial example-->
+      <div class="home">
+        <section class="user-info">
+          <div class="user-info__medal"><img src="img/home/silver-medal.png" alt=""></div>
+          <div class="user-info__avatar"><img src="img/home/user.png" alt=""></div>
+          <h1>Rajesh Kumar</h1>
+          <ul>
+            <li><span>Role : Marketing Officer</span><span>Branch : Coimbatore South</span></li>
+            <li><span>Phone : <a href="tel:995862314">995862314</a></span><span>Email : <a href="mailto:rajesh@sfl.com">rajesh@sfl.com</a></span></li>
+          </ul>
+        </section>
+        <div class="decor-line"></div>
+        <section class="user-purpose">
+          <h2>My purpose<a href="#"><svg class="icon icon-pencil ">
+                <use xlink:href="img/sprite.svg#icon-pencil"></use>
+              </svg></a></h2>
+          <p>To foster growth and productivity and be a focal point of customer service in SFL, have cent percent achievement rate and help urban poor facilitate their income.</p>
+        </section>
+        <div class="decor-line"></div>
+        <section class="user-income">
+          <h2>NSOH - 6.5 Crores<span>Arrear in Days - 25</span></h2>
+          <table>
+            <thead>
+              <tr>
+                <th>Lag Indicator</th>
+                <th>Total Score</th>
+                <th>Achieved Score</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td> <span>Growth in business</span></td>
+                <td>110</td>
+                <td>95</td>
+              </tr>
+              <tr>
+                <td> <span>Profitability</span></td>
+                <td>80</td>
+                <td>66</td>
+              </tr>
+              <tr>
+                <td> <span>Total</span></td>
+                <td>190</td>
+                <td>159</td>
+              </tr>
+              <tr>
+                <td> <span>Percentage</span></td>
+                <td> </td>
+                <td>84.7</td>
+              </tr>
+            </tbody>
+          </table>
+          <div class="user-income__row">
+            <div class="user-income__block user-income__block--chart">
+              <div class="user-income__scale">
+                <div id="chartdiv"></div>
+              </div><b>Profitable Growth 84%</b>
+            </div>
+            <div class="user-income__block">
+              <div class="medal"><img src="img/home/medal.png" alt=""><span>61</span></div><b>Company Overall Rank</b>
+            </div>
+            <div class="user-income__block">
+              <div class="medal"><img src="img/home/medal.png" alt=""><span>39</span></div><b>Region Wise Rank</b>
+            </div>
+          </div>
+        </section>
+        <div class="decor-line"></div>
+        <div class="user__statistics"></div>
+        <div class="decor-line"></div>
+        <section class="business-performance user-income">
+          <h2> <span>Business Performance Trends</span>
+            <div><select>
+                <option value="1">Quarter</option>
+                <option value="2">Quarter1</option>
+                <option value="3">Quarter2</option>
+              </select><svg class="icon icon-arrow-bottom ">
+                <use xlink:href="img/sprite.svg#icon-arrow-bottom"></use>
+              </svg></div>
+          </h2>
+          <table>
+            <thead>
+              <tr>
+                <th>Timeline</th>
+                <th>Sept'19</th>
+                <th>Oct'19</th>
+                <th>Nov'19<br><b>(Current)</b></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td> <span>Target <br></span><b>(in Lacs)</b></td>
+                <td>22.0L</td>
+                <td>24.0L</td>
+                <td>27.0L</td>
+              </tr>
+              <tr>
+                <td> <span>Achievement</span></td>
+                <td>18.0L</td>
+                <td>23.8L</td>
+                <td>24.0L</td>
+              </tr>
+              <tr>
+                <td> <strong>Business Performance Indicator</strong></td>
+                <td>81%</td>
+                <td>99.1%</td>
+                <td>88%</td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+        <div class="decor-line"></div>
+        <section class="top-perfomens">
+          <h2>Top Performers in the Organization<a href="#"><svg class="icon icon-expand ">
+                <use xlink:href="img/sprite.svg#icon-expand"></use>
+              </svg></a></h2>
+          <div class="top-perfomens__table">
+            <table>
+              <tr>
+                <th><img src="img/home/trophy.png" alt=""></th>
+                <th>
+                  <div class="top-perfomens__img"><img src="img/home/user.png" alt=""></div>Ram
+                </th>
+                <th>
+                  <div class="top-perfomens__img"><img src="img/home/user.png" alt=""></div>Suresh
+                </th>
+                <th>
+                  <div class="top-perfomens__img"><img src="img/home/user.png" alt=""></div>Suresh
+                </th>
+                <th>
+                  <div class="top-perfomens__img"><img src="img/home/user.png" alt=""></div>You
+                </th>
+                <th>
+                  <div class="top-perfomens__img"><img src="img/home/user.png" alt=""></div>Vikram
+                </th>
+                <th>
+                  <div class="top-perfomens__img"><img src="img/home/user.png" alt=""></div>Vikram
+                </th>
+                <th>
+                  <div class="top-perfomens__img"><img src="img/home/user.png" alt=""></div>Vikram
+                </th>
+                <th>
+                  <div class="top-perfomens__img"><img src="img/home/user.png" alt=""></div>Vikram
+                </th>
+              </tr>
+              <tr>
+                <td>Business Growth</td>
+                <td>9.7</td>
+                <td>9.7</td>
+                <td>9.1</td>
+                <td>8.8</td>
+                <td>8.3</td>
+                <td>9.1</td>
+                <td>8.8</td>
+                <td>8.3</td>
+              </tr>
+              <tr>
+                <td>Profitability</td>
+                <td>9.7</td>
+                <td>9.7</td>
+                <td>9.1</td>
+                <td>8.8</td>
+                <td>8.3</td>
+                <td>9.1</td>
+                <td>8.8</td>
+                <td>8.3s</td>
+              </tr>
+            </table>
+          </div>
+        </section>
+        <div class="decor-line"></div>
+        <section class="my-family">
+          <h2>My family</h2>
+          <div class="my-family__row">
+            <div class="my-family__block">
+              <div class="my-family__block__img"><img src="img/home/user.png" alt=""></div>
+              <p>Father <span>64, Retired</span></p>
+            </div>
+            <div class="my-family__block">
+              <div class="my-family__block__img"><img src="img/home/user.png" alt=""></div>
+              <p>Father <span>64, Retired</span></p>
+            </div>
+            <div class="my-family__block">
+              <div class="my-family__block__img"><img src="img/home/user.png" alt=""></div>
+              <p>Father <span>64, Retired</span></p>
+            </div>
+            <div class="my-family__block">
+              <div class="my-family__block__img"><img src="img/home/user.png" alt=""></div>
+              <p>Father <span>64, Retired</span></p>
+            </div>
+          </div>
+        </section>
+        <div class="home__more"> <a href="#">Show more</a></div>
+        <div class="home__show">
+          <div class="decor-line"></div>
+          <section class="top-aspiration user-income my-family">
+            <h2> <span>My Top 5 Aspirations</span>
+              <div><select>
+                  <option value="1">Aspiration List</option>
+                  <option value="2">Aspiration List1</option>
+                  <option value="3">Aspiration List2</option>
+                </select><svg class="icon icon-arrow-bottom ">
+                  <use xlink:href="img/sprite.svg#icon-arrow-bottom"></use>
+                </svg></div>
+            </h2>
+            <div class="my-family__row"><a class="my-family__block" href="#">
+                <div class="my-family__block__img" style="background: #71A95A"><img src="img/home/manager.png" alt=""></div>
+                <p>Promotion</p>
+              </a><a class="my-family__block" href="#">
+                <div class="my-family__block__img" style="background: #45969B"><img src="img/home/sedan-car-model.png" alt=""></div>
+                <p>Vehicle Ownership</p>
+              </a><a class="my-family__block" href="#">
+                <div class="my-family__block__img" style="background: #F39422"><img src="img/home/home-icon-silhouette.png" alt=""></div>
+                <p>Secure Home Loan</p>
+              </a><a class="my-family__block" href="#">
+                <div class="my-family__block__img" style="background: #C70D3A"><img src="img/home/team.png" alt=""></div>
+                <p>Personal Commitment</p>
+              </a><a class="my-family__block" href="#">
+                <div class="my-family__block__img" style="background: #E3B04B"><img src="img/home/warning-sign.png" alt=""></div>
+                <p>None</p>
+              </a></div>
+          </section>
+          <div class="decor-line"></div>
+          <section class="dashboard">
+            <h2>Dashboard</h2>
+            <ul>
+              <li><span><svg class="icon icon-arrow-right ">
+                    <use xlink:href="img/sprite.svg#icon-arrow-right"></use>
+                  </svg>Growth in business</span>
+                <ul>
+                  <li><span><svg class="icon icon-arrow-right ">
+                        <use xlink:href="img/sprite.svg#icon-arrow-right"></use>
+                      </svg>My club status</span>
+                    <ul>
+                      <li><span><svg class="icon icon-arrow-right ">
+                            <use xlink:href="img/sprite.svg#icon-arrow-right"></use>
+                          </svg>Monthly</span></li>
+                      <li><span><svg class="icon icon-arrow-right ">
+                            <use xlink:href="img/sprite.svg#icon-arrow-right"></use>
+                          </svg>Weekly</span></li>
+                      <li><span><svg class="icon icon-arrow-right ">
+                            <use xlink:href="img/sprite.svg#icon-arrow-right"></use>
+                          </svg>Daily</span></li>
+                    </ul>
+                  </li>
+                  <li><span><svg class="icon icon-arrow-right ">
+                        <use xlink:href="img/sprite.svg#icon-arrow-right"></use>
+                      </svg>Growth in business for the month of dec</span></li>
+                </ul>
+              </li>
+              <li><span><svg class="icon icon-arrow-right ">
+                    <use xlink:href="img/sprite.svg#icon-arrow-right"></use>
+                  </svg>Profitablilty</span>
+                <ul>
+                  <li><span><svg class="icon icon-arrow-right ">
+                        <use xlink:href="img/sprite.svg#icon-arrow-right"></use>
+                      </svg>My club status</span></li>
+                  <li><span><svg class="icon icon-arrow-right ">
+                        <use xlink:href="img/sprite.svg#icon-arrow-right"></use>
+                      </svg>Growth in business for the month of dec</span></li>
+                </ul>
+              </li>
+              <li><span><svg class="icon icon-arrow-right ">
+                    <use xlink:href="img/sprite.svg#icon-arrow-right"></use>
+                  </svg>Conversation</span>
+                <ul>
+                  <li><span><svg class="icon icon-arrow-right ">
+                        <use xlink:href="img/sprite.svg#icon-arrow-right"></use>
+                      </svg>Monthly</span></li>
+                  <li><span><svg class="icon icon-arrow-right ">
+                        <use xlink:href="img/sprite.svg#icon-arrow-right"></use>
+                      </svg>Weekly</span></li>
+                  <li><span><svg class="icon icon-arrow-right ">
+                        <use xlink:href="img/sprite.svg#icon-arrow-right"></use>
+                      </svg>Daily</span></li>
+                </ul>
+              </li>
+            </ul>
+          </section>
+          <div class="decor-line"></div>
+          <section class="work-satisfication">
+            <h2>Work Satisfication</h2>
+            <div class="work-satisfication__row"><input type="radio" name="work-satisfication" id="work-satisfication-1"><label for="work-satisfication-1"><img src="img/home/very-happy.png" alt="">Very happy</label><input type="radio" name="work-satisfication" id="work-satisfication-2"><label for="work-satisfication-2"><img src="img/home/happy.png" alt="">Satisfied</label><input type="radio" name="work-satisfication" id="work-satisfication-3"><label for="work-satisfication-3"><img src="img/home/confused.png" alt="">Not Satisfied </label><input type="radio" name="work-satisfication" id="work-satisfication-4"><label for="work-satisfication-4"><img src="img/home/sad.png" alt="">Need Help</label></div>
+          </section>
+          <div class="decor-line"></div>
+          <section class="btn-block">
+            <h2>My voice</h2>
+            <div class="btn-block__row"><a href="#">My opinion</a><a href="#">Help support</a><a href="#">Market feedback</a></div>
+          </section>
+          <div class="decor-line"></div>
+          <section class="btn-block">
+            <h2>My voice</h2>
+            <div class="btn-block__row"><a href="#">My need</a><a href="#">Attended</a></div>
+          </section>
+          <div class="decor-line"></div>
+          <section class="btn-block">
+            <h2>My voice</h2>
+            <ul>
+              <li>Club Status : S1</li>
+              <li>Growth Grade : A </li>
+            </ul>
+            <div class="btn-block__row"><a href="#">Expand Analytics</a></div>
+          </section>
+          <div class="decor-line"></div>
+        </div>
+      </div>
     </div>
     <!--END out-->
     <!--LOAD SCRIPTS-->
+    <script src="https://www.amcharts.com/lib/4/core.js"></script>
+    <script src="https://www.amcharts.com/lib/4/charts.js"></script>
+    <script src="https://www.amcharts.com/lib/4/themes/animated.js"></script>
     <script type="text/javascript" src="js/app.js"></script>
   </body>
 </html>

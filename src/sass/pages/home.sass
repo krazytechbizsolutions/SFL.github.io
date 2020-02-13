@@ -1,0 +1,390 @@
+.user-info
+  position: relative
+  padding: 45px 15px 10px
+  &:before
+    content: ''
+    height: 124px
+    width: 100%
+    position: absolute
+    top: 0
+    left: 0
+    background: #F4412B
+    z-index: -1
+  &__medal
+    position: absolute
+    right: 5px
+    top: 0
+    img
+      width: 44px
+  &__avatar
+    border-radius: 50%
+    border: 8px solid #fff
+    overflow: hidden
+    +center
+    width: 145px
+    height: 145px
+    img
+      width: 100%
+  h1
+    font-size: 22px
+    color: #F4412B
+    font-weight: normal
+    padding: 10px 0
+  ul
+    display: flex
+    li
+      flex: 3
+      &:last-child
+        flex: 2
+    span
+      font-size: 14px
+      display: block
+      margin-bottom: 8px
+    a
+      color: #707070
+
+
+
+
+.user-purpose
+  padding: 15px 15px 20px
+  h2
+    color: #F4412B
+    font-weight: normal
+    padding-bottom: 8px
+    font-size: 18px
+    position: relative
+  a
+    position: absolute
+    right: 0
+    top: 0
+    svg
+      fill: #707070
+      width: 20px
+      height: 20px
+
+
+
+.user-income
+  padding: 10px 15px
+  h2
+    color: #F4412B
+    font-weight: normal
+    padding-bottom: 8px
+    font-size: 18px
+    text-transform: uppercase
+    display: flex
+    justify-content: space-between
+    span
+      text-transform: none
+    div
+      border: 1px solid #A4A4A4
+      border-radius: 6px
+      padding: 0 7px
+      display: flex
+      justify-content: space-between
+      align-items: center
+      select
+        color: #6E6E6E
+        font-size: 14px
+      svg
+        width: 10px
+        fill: #6E6E6E
+  table
+    margin-bottom: 25px
+    thead
+      background: #C8C8C8
+      border-radius: 6px
+      display: block
+    tr
+      border-radius: 6px
+      display: flex
+      justify-content: space-between
+      align-items: center
+      padding: 0 15px
+      border: 1px solid #EEEEEE
+      overflow: hidden
+      min-height: 38px
+      &:nth-child(2n)
+        background: #EEEEEE
+      &:last-child
+        td:last-child
+          border-bottom-left-radius: 6px
+    th
+      flex: 1
+      font-weight: normal
+      &:first-child
+        text-align: left
+      &:last-child
+        text-align: right
+        border-top-left-radius: 6px
+    td
+      text-align: center
+      flex: 1
+      font-size: 11px
+      height: 100%
+      min-height: 38px
+      display: flex
+      align-items: center
+      flex-wrap: wrap
+      justify-content: center
+      &:first-child
+        justify-content: flex-start
+      span
+        max-width: 60px
+        display: block
+        text-align: left
+        padding-left: 10px
+  &__scale
+    position: relative
+    #chartdiv
+      width: 100%
+      height: 100px
+      text
+        display: none
+  &__row
+    display: flex
+  &__block
+    +center-column
+    flex: 1
+    b
+      font-weight: normal
+      font-size: 11px
+      display: block
+      padding-top: 7px
+    &--chart
+      b
+        width: 100%
+        height: 40px
+        background: #fff
+        margin-top: -23px
+        display: block
+        z-index: 9
+        position: relative
+        text-align: center
+
+
+
+
+
+
+
+
+.business-performance
+  tr
+    padding: 0 !important
+    b
+      font-size: 11px
+      font-weight: normal
+    strong
+      font-size: 9px
+      font-weight: bold
+      text-align: left
+    span
+      padding-left: 0 !important
+  td
+    font-size: 14px !important
+  th, td
+    padding: 0 15px
+  td:first-child
+    justify-content: flex-start
+  th:last-child, td:last-child
+    background: #E5ECFF
+    text-align: center !important
+
+
+
+
+.top-perfomens
+  padding: 20px 15px
+  &__table
+    overflow-x: auto
+    table
+      width: 100%
+  h2
+    color: #F4412B
+    font-weight: normal
+    padding-bottom: 15px
+    font-size: 18px
+    display: flex
+    justify-content: space-between
+    position: relative
+    a
+      position: absolute
+      right: 0
+      top: -6px
+      svg
+        width: 30px
+        height: 30px
+        fill: #707070
+  th
+    img
+      width: 60px
+  th, td
+    width: 60px
+    text-align: center
+    font-size: 12px
+    font-weight: normal
+    vertical-align: middle
+    padding: 0 6px
+  tr
+    height: 40px
+    td:first-child
+      text-align: left !important
+  &__img
+    width: 50px
+    height: 50%
+    border-radius: 50%
+    overflow: hidden
+    +center
+    +relative-x
+    img
+      width: 100% !important
+
+
+
+
+
+
+
+.my-family
+  padding: 15px 15px
+  h2
+    color: #F4412B
+    font-weight: normal
+    padding-bottom: 15px
+    font-size: 18px
+    display: flex
+    justify-content: space-between
+    position: relative
+  &__row
+    display: flex
+    flex-wrap: wrap
+  &__block
+    flex: 0 0 25%
+    max-width: 25%
+    margin-bottom: 15px
+    &__img
+      width: 60px
+      height: 60px
+      +center
+      border-radius: 50%
+      overflow: hidden
+      +relative-x
+      img
+        width: 100%
+    p
+      text-align: center
+      span
+        display: block
+
+
+
+.home__more
+  padding: 20px 0
+  +center
+  background: #F3F3F3
+  a
+    +center
+    display: inline-flex
+    font-size: 16px
+    font-weight: bold
+    color: #F4412B
+    border: 2px solid #F4412B
+    padding: 10px 25px
+.home__show
+  display: none
+
+.top-aspiration
+  .my-family__block
+    flex: 0 0 20%
+    max-width: 20%
+    &__img
+      img
+        width: auto
+    p
+      color: #707070
+      font-size: 13px
+
+
+
+.dashboard
+  padding: 15px 15px
+  h2
+    color: #F4412B
+    font-weight: normal
+    padding-bottom: 15px
+    font-size: 18px
+    display: flex
+    justify-content: space-between
+    position: relative
+  li
+    svg
+      width: 11px
+      fill: #707070
+      position: relative
+      top: 2px
+      margin-right: 10px
+      +tr
+    ul
+      display: none
+    span.active svg
+      transform: rotate(90deg)
+    li
+      padding-left: 1rem
+      font-size: 11px
+      svg
+        width: 9px
+
+
+
+.work-satisfication
+  padding: 15px 15px
+  h2
+    color: #F4412B
+    font-weight: normal
+    padding-bottom: 15px
+    font-size: 18px
+    display: flex
+    justify-content: space-between
+    position: relative
+  &__row
+    display: flex
+    justify-content: space-between
+    input
+      display: none
+      &:checked + label
+        transform: scale(1.2)
+    label
+      +center-column
+      +tr
+      img
+        width: 50px
+
+
+
+.btn-block
+  padding: 15px
+  h2
+    color: #F4412B
+    font-weight: normal
+    padding-bottom: 15px
+    font-size: 18px
+    display: flex
+    justify-content: space-between
+    position: relative
+  ul
+    margin-top: -10px
+    margin-bottom: 10px
+    li
+      margin-bottom: 5px
+  &__row
+    display: flex
+    a
+      width: 100%
+      +center
+      background: #F4412B
+      color: #fff
+      border-radius: 6px
+      margin-right: 5px
+      height: 55px

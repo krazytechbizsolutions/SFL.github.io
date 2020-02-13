@@ -14,4 +14,343 @@ block content
   //-   for item in list
   //-     li= item
   // partial example
-  include ./home/intro
+  .home
+    section.user-info
+      .user-info__medal
+        img(src="img/home/silver-medal.png", alt="")
+      .user-info__avatar
+        img(src="img/home/user.png", alt="")
+      h1 Rajesh Kumar
+      ul
+        li
+          span Role : Marketing Officer
+          span Branch : Coimbatore South
+        li
+          span Phone : 
+            a(href="tel:995862314") 995862314
+          span Email : 
+            a(href="mailto:rajesh@sfl.com") rajesh@sfl.com
+    .decor-line
+    section.user-purpose
+      h2 My purpose
+        a(href="#")
+          +icon('pencil')
+      p To foster growth and productivity and be a focal point of customer service in SFL, have cent percent achievement rate and help urban poor facilitate their income.
+    .decor-line
+    section.user-income
+      h2 NSOH - 6.5 Crores
+        span Arrear in Days - 25
+      table
+        thead
+          tr
+            th Lag Indicator
+            th Total Score
+            th Achieved Score
+        tbody
+          tr
+            td 
+              span Growth in business
+            td 110
+            td 95
+          tr
+            td 
+              span Profitability
+            td 80
+            td 66
+          tr
+            td 
+              span Total
+            td 190
+            td 159
+          tr
+            td 
+              span Percentage
+            td 
+            td 84.7
+      .user-income__row
+        .user-income__block.user-income__block--chart
+          .user-income__scale
+            #chartdiv
+          b Profitable Growth 84%
+        .user-income__block
+          .medal
+            img(src="img/home/medal.png", alt="")
+            span 61
+          b Company Overall Rank
+        .user-income__block
+          .medal
+            img(src="img/home/medal.png", alt="")
+            span 39
+          b Region Wise Rank
+    .decor-line
+
+
+    .user__statistics
+      
+
+
+
+    .decor-line
+    section.business-performance.user-income
+      h2 
+        span Business Performance Trends
+        div
+          select
+            option(value="1") Quarter
+            option(value="2") Quarter1
+            option(value="3") Quarter2
+          +icon('arrow-bottom')
+      table
+        thead
+          tr
+            th Timeline
+            th Sept'19
+            th Oct'19
+            th Nov'19
+              <br>
+              b (Current)
+        tbody
+          tr
+            td 
+              span Target <br>
+              b (in Lacs)
+            td 22.0L
+            td 24.0L
+            td 27.0L
+          tr
+            td 
+              span Achievement
+            td 18.0L
+            td 23.8L
+            td 24.0L
+          tr
+            td 
+              strong Business Performance Indicator
+            td 81%
+            td 99.1%
+            td 88%
+    .decor-line
+    section.top-perfomens
+      h2 Top Performers in the Organization
+        a(href="#")
+          +icon('expand')
+      .top-perfomens__table
+        table
+            tr
+              th
+                img(src="img/home/trophy.png", alt="")
+              th
+                .top-perfomens__img
+                  img(src="img/home/user.png", alt="")
+                | Ram
+              th
+                .top-perfomens__img
+                  img(src="img/home/user.png", alt="")
+                | Suresh
+              th
+                .top-perfomens__img
+                  img(src="img/home/user.png", alt="")
+                | Suresh
+              th
+                .top-perfomens__img
+                  img(src="img/home/user.png", alt="")
+                | You
+              th
+                .top-perfomens__img
+                  img(src="img/home/user.png", alt="")
+                | Vikram
+              th
+                .top-perfomens__img
+                  img(src="img/home/user.png", alt="")
+                | Vikram
+              th
+                .top-perfomens__img
+                  img(src="img/home/user.png", alt="")
+                | Vikram
+              th
+                .top-perfomens__img
+                  img(src="img/home/user.png", alt="")
+                | Vikram
+            tr
+              td Business Growth
+              td 9.7
+              td 9.7
+              td 9.1
+              td 8.8
+              td 8.3
+              td 9.1
+              td 8.8
+              td 8.3
+            tr
+              td Profitability
+              td 9.7
+              td 9.7
+              td 9.1
+              td 8.8
+              td 8.3
+              td 9.1
+              td 8.8
+              td 8.3s
+    .decor-line
+    section.my-family
+      h2 My family
+      .my-family__row
+        .my-family__block
+          .my-family__block__img
+            img(src="img/home/user.png", alt="")
+          p Father 
+            span 64, Retired
+        .my-family__block
+          .my-family__block__img
+            img(src="img/home/user.png", alt="")
+          p Father 
+            span 64, Retired
+        .my-family__block
+          .my-family__block__img
+            img(src="img/home/user.png", alt="")
+          p Father 
+            span 64, Retired
+        .my-family__block
+          .my-family__block__img
+            img(src="img/home/user.png", alt="")
+          p Father 
+            span 64, Retired
+    .home__more 
+      a(href="#") Show more
+    .home__show
+
+
+      .decor-line
+      section.top-aspiration.user-income.my-family
+        h2 
+          span My Top 5 Aspirations
+          div
+            select
+              option(value="1") Aspiration List
+              option(value="2") Aspiration List1
+              option(value="3") Aspiration List2
+            +icon('arrow-bottom')
+        .my-family__row
+          a(href="#").my-family__block
+            .my-family__block__img(style="background: #71A95A")
+              img(src="img/home/manager.png", alt="")
+            p Promotion
+          a(href="#").my-family__block
+            .my-family__block__img(style="background: #45969B")
+              img(src="img/home/sedan-car-model.png", alt="")
+            p Vehicle Ownership
+          a(href="#").my-family__block
+            .my-family__block__img(style="background: #F39422")
+              img(src="img/home/home-icon-silhouette.png", alt="")
+            p Secure Home Loan
+          a(href="#").my-family__block
+            .my-family__block__img(style="background: #C70D3A")
+              img(src="img/home/team.png", alt="")
+            p Personal Commitment
+          a(href="#").my-family__block
+            .my-family__block__img(style="background: #E3B04B")
+              img(src="img/home/warning-sign.png", alt="")
+            p None
+      .decor-line
+      section.dashboard
+        h2 Dashboard
+        ul
+          li
+            span
+              +icon('arrow-right')
+              | Growth in business
+            ul
+              li
+                span
+                  +icon('arrow-right')
+                  | My club status
+                ul
+                  li
+                    span
+                      +icon('arrow-right')
+                      | Monthly
+                  li
+                    span
+                      +icon('arrow-right')
+                      | Weekly
+                  li
+                    span
+                      +icon('arrow-right')
+                      | Daily
+              li
+                span
+                  +icon('arrow-right')
+                  | Growth in business for the month of dec
+          li
+            span
+              +icon('arrow-right')
+              | Profitablilty
+            ul
+              li
+                span
+                  +icon('arrow-right')
+                  | My club status
+              li
+                span
+                  +icon('arrow-right')
+                  | Growth in business for the month of dec
+          li
+            span
+              +icon('arrow-right')
+              | Conversation
+            ul
+              li
+                span
+                  +icon('arrow-right')
+                  | Monthly
+              li
+                span
+                  +icon('arrow-right')
+                  | Weekly
+              li
+                span
+                  +icon('arrow-right')
+                  | Daily
+
+      .decor-line
+      section.work-satisfication
+        h2 Work Satisfication
+        .work-satisfication__row
+          input(type="radio" name="work-satisfication" id="work-satisfication-1")
+          label(for="work-satisfication-1")
+            img(src="img/home/very-happy.png", alt="")
+            | Very happy
+          input(type="radio" name="work-satisfication" id="work-satisfication-2")
+          label(for="work-satisfication-2")
+            img(src="img/home/happy.png", alt="")
+            | Satisfied
+          input(type="radio" name="work-satisfication" id="work-satisfication-3")
+          label(for="work-satisfication-3")
+            img(src="img/home/confused.png", alt="")
+            | Not Satisfied  
+          input(type="radio" name="work-satisfication" id="work-satisfication-4")
+          label(for="work-satisfication-4")
+            img(src="img/home/sad.png", alt="")
+            | Need Help
+      .decor-line
+      section.btn-block
+        h2 My voice
+        .btn-block__row
+          a(href="#") My opinion
+          a(href="#") Help support
+          a(href="#") Market feedback
+      .decor-line
+      section.btn-block
+        h2 My voice
+        .btn-block__row
+          a(href="#") My need
+          a(href="#") Attended
+      .decor-line
+      section.btn-block
+        h2 My voice
+        ul
+          li Club Status : S1
+          li Growth Grade : A 
+        .btn-block__row
+          a(href="#") Expand Analytics
+      .decor-line

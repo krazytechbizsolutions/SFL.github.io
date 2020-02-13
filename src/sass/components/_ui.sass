@@ -1,8 +1,14 @@
 html
 body
-  // font-family: 'Open Sans', sans-serif
+  font-family: 'Segoe UI'
   box-sizing: border-box
   position: relative
+  font-size: 14px
+  font-weight: normal
+  line-height: 1.4
+  color: #707070
+select
+  font-family: 'Segoe UI'
 .container
   box-sizing: border-box
   +rmin(1200)
@@ -15,7 +21,8 @@ input[type="submit"]
   -webkit-appearance: none
 textarea
   resize: none
-
+.out
+  padding-top: 54px
 
 +r(767)
 	.hidden-xs
@@ -28,6 +35,27 @@ textarea
 		display: none !important
 
 
+
+
+.decor-line
+  background: #EEEEEE
+  height: 10px
+
+
+.medal
+  width: 57px
+  height: 57px
+  +center
+  position: relative
+  img
+    width: 57px
+  span
+    font-size: 14px
+    font-weight: bold
+    color: #000
+    position: absolute
+    display: block
+    padding-bottom: 12px
 
 
 
