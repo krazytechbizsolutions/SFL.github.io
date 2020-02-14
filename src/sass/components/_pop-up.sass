@@ -1,21 +1,30 @@
-// .pop-up
-//   &-close
-//     width: 30px
-//     height: 30px
-//     position: absolute
-//     right: 20px
-//     top: 20px
-//     span
-//       &:before, &:after
-//         content: ''
-//         width: 30px
-//         height: 2px
-//         background: $black
-//         position: absolute
-//         top: 13px
-//       &:before
-//         left: 0
-//         transform: rotate(45deg)
-//       &:after
-//         right: 0
-//         transform: rotate(-45deg)
+.blocker
+  z-index: 12
+  padding: 15px
+.modal 
+  width: 100%
+  padding: 0 !important
+  border-radius: 0
+  a.close-modal
+    display: none
+  h3
+    height: 50px
+    display: block
+    background: #F4412B
+    color: #fff
+    font-size: 16px
+    font-weight: normal
+    +center
+    margin-bottom: 15px
+  input[type="submit"]
+    background: #26B48D
+    font-size: 16px
+    color: #fff
+    height: 50px
+    width: calc(100% + 30px)
+    position: relative
+    left: -15px
+    bottom: -15px
+    text-align: center
+    +center
+    margin-top: 30px

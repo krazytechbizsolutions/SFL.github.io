@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Index Page</title>
+    <title>Home</title>
     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
     <meta name="viewport" id="viewport" content="width=415, minimum-scale=0.3, maximum-scale=3, user-scalable=no">
     <meta name="theme-color" content="#fff">
@@ -367,7 +367,7 @@
           <div class="decor-line"></div>
           <section class="btn-block">
             <h2>My voice</h2>
-            <div class="btn-block__row"><a href="#">My opinion</a><a href="#">Help support</a><a href="#">Market feedback</a></div>
+            <div class="btn-block__row"><a href="#help" rel="modal:open">My opinion</a><a href="#help" rel="modal:open">Help support</a><a href="#help" rel="modal:open">Market feedback</a></div>
           </section>
           <div class="decor-line"></div>
           <section class="btn-block">
@@ -386,6 +386,30 @@
           <div class="decor-line"></div>
         </div>
       </div>
+      <!--BEGIN pop-up-->
+      <div class="modal help" id="help">
+        <h3>Help & Support</h3>
+        <form class="help__form">
+          <p>Segment</p>
+          <div class="help__form__select"><select>
+              <option value="1">Critical Aoccounts</option>
+              <option value="2">Critical Aoccounts2</option>
+              <option value="3">Critical Aoccounts3</option>
+            </select><svg class="icon icon-arrow-bottom ">
+              <use xlink:href="img/sprite.svg#icon-arrow-bottom"></use>
+            </svg></div>
+          <p>Severity</p>
+          <div class="help__form__select"><select>
+              <option value="1">High</option>
+              <option value="2">High2</option>
+              <option value="3">High3</option>
+            </select><svg class="icon icon-arrow-bottom ">
+              <use xlink:href="img/sprite.svg#icon-arrow-bottom"></use>
+            </svg></div>
+          <p>Support Required</p><textarea></textarea><input type="submit" value="Submit">
+        </form>
+      </div>
+      <!--END pop-up-->
     </div>
     <!--END out-->
     <!--LOAD SCRIPTS-->

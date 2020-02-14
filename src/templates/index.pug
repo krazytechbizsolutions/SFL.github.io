@@ -1,18 +1,8 @@
 ---
-title: Index Page
+title: Home
 ---
 extends layouts/_layout
 block content
-  //- // mixin example
-  //- +icon('facebook')
-
-  //- // variable set example
-  //- - let list = ['text 1', 'text 2', 'text 3'];
-
-  //- // loop example
-  //- ul  
-  //-   for item in list
-  //-     li= item
   // partial example
   .home
     section.user-info
@@ -385,9 +375,9 @@ block content
       section.btn-block
         h2 My voice
         .btn-block__row
-          a(href="#") My opinion
-          a(href="#") Help support
-          a(href="#") Market feedback
+          a(href="#help" rel="modal:open") My opinion
+          a(href="#help" rel="modal:open") Help support
+          a(href="#help" rel="modal:open") Market feedback
       .decor-line
       section.btn-block
         h2 My voice

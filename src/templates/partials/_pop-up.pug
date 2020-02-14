@@ -1,3 +1,22 @@
-//- //BEGIN pop-up
-//- .pop-up
-//- //END pop-up
+//BEGIN pop-up
+.modal.help#help
+  h3 Help & Support
+  form.help__form
+    p Segment
+    .help__form__select
+      select
+        option(value="1") Critical Aoccounts
+        option(value="2") Critical Aoccounts2
+        option(value="3") Critical Aoccounts3
+      +icon('arrow-bottom')
+    p Severity
+    .help__form__select
+      select
+        option(value="1") High
+        option(value="2") High2
+        option(value="3") High3
+      +icon('arrow-bottom')
+    p Support Required
+    textarea
+    input(type="submit" value="Submit")
+//END pop-up
