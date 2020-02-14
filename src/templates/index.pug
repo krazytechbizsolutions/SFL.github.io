@@ -71,7 +71,9 @@ block content
         .user-income__block.user-income__block--chart
           .user-income__scale
             #chartdiv
-          b Profitable Growth 84%
+          b Profitable Growth 
+            span 84
+            | %
         .user-income__block
           .medal
             img(src="img/home/medal.png", alt="")
@@ -83,9 +85,56 @@ block content
             span 39
           b Region Wise Rank
     .decor-line
-
-
     .user__statistics
+      .user__statistics__row
+        .user__statistics__block
+          strong Target Vs Distribution
+          .schedule-home
+            p Business
+            .schedule-home__line
+              div(style="background:#0F2BB9")
+              span
+                b 32
+                | L
+              div(style="background:#B95E0F")
+              span
+                b 25.6
+                | L
+          .schedule-home
+            p Collection
+            .schedule-home__line
+              div(style="background:#0F2BB9")
+              span
+                b 17
+                | L
+              div(style="background:#B95E0F")
+              span
+                b 15.6
+                | L
+              
+        .user__statistics__block
+          strong Disbursement % 
+          .user__statistics--overflow
+            #pie-chart-1(data-val="10")
+          .user__statistics--overflow
+            #pie-chart-2(data-val="80")
+        .user__statistics__block
+          strong Company<br> Rank 
+          .medal
+            img(src="img/home/medal.png", alt="")
+            span 39
+          .medal
+            img(src="img/home/medal.png", alt="")
+            span 39
+        .user__statistics__block
+          strong Region<br> Rank
+          .medal
+            img(src="img/home/medal.png", alt="")
+            span 39
+          .medal
+            img(src="img/home/medal.png", alt="")
+            span 39
+          
       
 
 

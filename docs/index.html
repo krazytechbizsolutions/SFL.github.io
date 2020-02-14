@@ -102,7 +102,7 @@
             <div class="user-income__block user-income__block--chart">
               <div class="user-income__scale">
                 <div id="chartdiv"></div>
-              </div><b>Profitable Growth 84%</b>
+              </div><b>Profitable Growth <span>84</span>%</b>
             </div>
             <div class="user-income__block">
               <div class="medal"><img src="img/home/medal.png" alt=""><span>61</span></div><b>Company Overall Rank</b>
@@ -113,7 +113,42 @@
           </div>
         </section>
         <div class="decor-line"></div>
-        <div class="user__statistics"></div>
+        <div class="user__statistics">
+          <div class="user__statistics__row">
+            <div class="user__statistics__block"><strong>Target Vs Distribution</strong>
+              <div class="schedule-home">
+                <p>Business</p>
+                <div class="schedule-home__line">
+                  <div style="background:#0F2BB9"></div><span><b>32</b>L</span>
+                  <div style="background:#B95E0F"></div><span><b>25.6</b>L</span>
+                </div>
+              </div>
+              <div class="schedule-home">
+                <p>Collection</p>
+                <div class="schedule-home__line">
+                  <div style="background:#0F2BB9"></div><span><b>17</b>L</span>
+                  <div style="background:#B95E0F"></div><span><b>15.6</b>L</span>
+                </div>
+              </div>
+            </div>
+            <div class="user__statistics__block"><strong>Disbursement % </strong>
+              <div class="user__statistics--overflow">
+                <div id="pie-chart-1" data-val="10"></div>
+              </div>
+              <div class="user__statistics--overflow">
+                <div id="pie-chart-2" data-val="80"></div>
+              </div>
+            </div>
+            <div class="user__statistics__block"><strong>Company<br> Rank </strong>
+              <div class="medal"><img src="img/home/medal.png" alt=""><span>39</span></div>
+              <div class="medal"><img src="img/home/medal.png" alt=""><span>39</span></div>
+            </div>
+            <div class="user__statistics__block"><strong>Region<br> Rank</strong>
+              <div class="medal"><img src="img/home/medal.png" alt=""><span>39</span></div>
+              <div class="medal"><img src="img/home/medal.png" alt=""><span>39</span></div>
+            </div>
+          </div>
+        </div>
         <div class="decor-line"></div>
         <section class="business-performance user-income">
           <h2> <span>Business Performance Trends</span>
@@ -356,6 +391,7 @@
     <!--LOAD SCRIPTS-->
     <script src="https://www.amcharts.com/lib/4/core.js"></script>
     <script src="https://www.amcharts.com/lib/4/charts.js"></script>
+    <script src="https://www.amcharts.com/lib/4/themes/dataviz.js"></script>
     <script src="https://www.amcharts.com/lib/4/themes/animated.js"></script>
     <script type="text/javascript" src="js/app.js"></script>
   </body>
