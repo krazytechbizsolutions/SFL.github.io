@@ -1,0 +1,100 @@
+---
+title: Graphs
+---
+extends layouts/_layout
+block content
+  // partial example
+  .graphs
+    .back
+      a(href="#")
+        +icon('arrow-left')
+    .graphs__content
+      .graphs__block
+        .graphs__title
+          h2 Target Vs Achievement
+        .graphs__data
+          .graphs__data__row
+            p Target :
+            span.target 30
+          .graphs__data__row
+            p Achievement :
+            span.achievement 10
+          .graphs__data__row
+            p Achievement % :
+            span.percent 
+        .achievement-chart
+          p Target Vs Achievement
+          #achievement
+          span 50%
+        ul.graphs__info
+          li Pending Approved Cases : 7L
+          li Declined Cases : 4L
+        a(href="#").graphs__btn BM Remarks
+
+
+      .graphs__block
+        .graphs__title
+          h2 Inward Status
+        .graphs__data
+          .graphs__data__row
+            p Total target :
+            span 20L
+          .graphs__data__row
+            p Inward for a month :
+            span 10L
+          .graphs__data__row
+            p Complete files :
+            span 70%
+        h3 C1A & C1B file Status
+        .inward-chart
+          #inward
+        ul.graphs__info
+          li Total files in C1A : 
+            span.c1 4
+          li Total files in C1B : 
+            span.c2 2
+        a(href="#").graphs__btn BM Remarks
+        
+
+
+      .graphs__block
+        .graphs__title
+          h2 Lead Management
+        .graphs__data
+          .graphs__data__row
+            p Total Leads
+            span 6
+          .graphs__data__row
+            p Avg new customer/day
+            span 6
+        h3 Lead Status
+        .management-chart
+          #management
+        a(href="#").graphs__btn BM Remarks
+        
+
+      .graphs__block
+        .graphs__title
+          h2 Task Closure
+        .graphs__data
+          .graphs__data__row
+            p Total Tasks
+            span 10
+          .graphs__data__row
+            p Open
+            span 3
+          .graphs__data__row
+            p Closed
+            span 7 
+          .graphs__data__row
+            p Closure
+            span 70%
+          .graphs__data__row
+            p Avg customer visit/day
+            span 7 
+        .closure-chart
+          p Task Status
+          #closure
+        a(href="#").graphs__btn BM Remarks
+
+

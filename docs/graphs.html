@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>All Pages</title>
+    <title>Graphs</title>
     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
     <meta name="viewport" id="viewport" content="width=415, minimum-scale=0.3, maximum-scale=3, user-scalable=no">
     <meta name="theme-color" content="#fff">
@@ -47,14 +47,103 @@
         </div>
         <!--END header-->
       </div><!-- partial example-->
-      <div class="pages">
-        <h1>All Pages</h1>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="training.html">Training</a></li>
-          <li><a href="help.html">Help</a></li>
-          <li><a href="graphs.html">Graphs</a></li>
-        </ul>
+      <div class="graphs">
+        <div class="back"><a href="#"><svg class="icon icon-arrow-left ">
+              <use xlink:href="img/sprite.svg#icon-arrow-left"></use>
+            </svg></a></div>
+        <div class="graphs__content">
+          <div class="graphs__block">
+            <div class="graphs__title">
+              <h2>Target Vs Achievement</h2>
+            </div>
+            <div class="graphs__data">
+              <div class="graphs__data__row">
+                <p>Target :</p><span class="target">30</span>
+              </div>
+              <div class="graphs__data__row">
+                <p>Achievement :</p><span class="achievement">10</span>
+              </div>
+              <div class="graphs__data__row">
+                <p>Achievement % :</p><span class="percent"> </span>
+              </div>
+            </div>
+            <div class="achievement-chart">
+              <p>Target Vs Achievement</p>
+              <div id="achievement"></div><span>50%</span>
+            </div>
+            <ul class="graphs__info">
+              <li>Pending Approved Cases : 7L</li>
+              <li>Declined Cases : 4L</li>
+            </ul><a class="graphs__btn" href="#">BM Remarks</a>
+          </div>
+          <div class="graphs__block">
+            <div class="graphs__title">
+              <h2>Inward Status</h2>
+            </div>
+            <div class="graphs__data">
+              <div class="graphs__data__row">
+                <p>Total target :</p><span>20L</span>
+              </div>
+              <div class="graphs__data__row">
+                <p>Inward for a month :</p><span>10L</span>
+              </div>
+              <div class="graphs__data__row">
+                <p>Complete files :</p><span>70%</span>
+              </div>
+            </div>
+            <h3>C1A & C1B file Status</h3>
+            <div class="inward-chart">
+              <div id="inward"></div>
+            </div>
+            <ul class="graphs__info">
+              <li>Total files in C1A : <span class="c1">4</span></li>
+              <li>Total files in C1B : <span class="c2">2</span></li>
+            </ul><a class="graphs__btn" href="#">BM Remarks</a>
+          </div>
+          <div class="graphs__block">
+            <div class="graphs__title">
+              <h2>Lead Management</h2>
+            </div>
+            <div class="graphs__data">
+              <div class="graphs__data__row">
+                <p>Total Leads</p><span>6</span>
+              </div>
+              <div class="graphs__data__row">
+                <p>Avg new customer/day</p><span>6</span>
+              </div>
+            </div>
+            <h3>Lead Status</h3>
+            <div class="management-chart">
+              <div id="management"></div>
+            </div><a class="graphs__btn" href="#">BM Remarks</a>
+          </div>
+          <div class="graphs__block">
+            <div class="graphs__title">
+              <h2>Task Closure</h2>
+            </div>
+            <div class="graphs__data">
+              <div class="graphs__data__row">
+                <p>Total Tasks</p><span>10</span>
+              </div>
+              <div class="graphs__data__row">
+                <p>Open</p><span>3</span>
+              </div>
+              <div class="graphs__data__row">
+                <p>Closed</p><span>7 </span>
+              </div>
+              <div class="graphs__data__row">
+                <p>Closure</p><span>70%</span>
+              </div>
+              <div class="graphs__data__row">
+                <p>Avg customer visit/day</p><span>7 </span>
+              </div>
+            </div>
+            <div class="closure-chart">
+              <p>Task Status</p>
+              <div id="closure"></div>
+            </div><a class="graphs__btn" href="#">BM Remarks</a>
+          </div>
+        </div>
       </div>
       <!--BEGIN pop-up-->
       <div class="modal help" id="help">
