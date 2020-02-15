@@ -35,6 +35,3 @@ $('.home__more').on('click', 'a', function(event) {
   $(this).parent('.home__more').fadeOut();
   $('.home__show').slideDown();
 });
-
-
-
