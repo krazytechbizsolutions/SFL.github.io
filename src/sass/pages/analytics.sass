@@ -1,0 +1,62 @@
+.analytics
+  &__content
+    padding: 0 20px
+  &__title
+    background: #F2F2F2
+    border-radius: 6px
+    margin-top: 25px
+    padding: 6px 10px
+    h2
+      font-size: 20px
+      color: #F4412B
+      font-weight: normal
+  table
+    margin-top: 30px
+  &__grid
+    div
+      position: relative
+      padding-left: 35px
+    span.first-span
+      border: 1px solid #000
+      position: absolute
+      transform: rotate(-90deg)
+      transform-origin: bottom left
+      left: 35px
+      bottom: 0
+      width: 241px
+      height: 35px
+      font-weight: bold
+      +center
+    span.last-span
+      +center
+      height: 35px
+      width: 100%
+      border: 1px solid #000
+      font-weight: bold
+    tr
+      td
+        border: 1px solid #000
+        height: 40px
+        text-align: center
+        vertical-align: middle
+        position: relative
+        svg
+          width: 27px
+          height: 27px
+          fill: #E3B04B
+          position: absolute
+          left: 50%
+          top: 50%
+          transform: translate(-50%, -50%)
+        &.active
+          background: rgb(1, 112, 190) !important
+        &:first-child
+          background: rgb(1, 112, 190)
+          color: #fff
+          width: 50px
+      &:last-child
+        td
+          background: rgb(1, 112, 190)
+          color: #fff
+          width: 100px
+
