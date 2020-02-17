@@ -228,8 +228,6 @@ if($('div').hasClass('closure-chart')) {
 if($('div').hasClass('pipeline-status-chart')) {
   am4core.ready(function() {
 
-    // Themes begin
-    am4core.useTheme(am4themes_animated);
     // Themes end
   
   
@@ -386,9 +384,6 @@ if($('div').hasClass('pipeline-status-chart')) {
 //critical-account
 if($('div').hasClass('critical-account-chart')) {
   am4core.ready(function() {
-
-    // Themes begin
-    am4core.useTheme(am4themes_animated);
     
     // Themes end
   
@@ -523,4 +518,139 @@ if($('div').hasClass('critical-account-chart')) {
   
   }); // end am4core.ready()
 
+}
+
+
+
+
+
+
+//promotional-activities
+if($('div').hasClass('promotional-activities-chart')) {
+  am4core.ready(function() {
+
+
+    var chart = am4core.create('promotional-activities', am4charts.XYChart);
+
+    chart.data = [
+      {
+        category: 'Customer',
+        value1: 2,
+        value2: 1,
+      },
+      {
+        category: 'Total',
+        value1: 2,
+        value2: 3,
+      },{
+        category: 'Customer-1',
+        value1: 1,
+        value2: 1,
+      },
+      {
+        category: 'Total-2',
+        value1: 2,
+        value2: 1,
+      }
+    ];
+
+    chart.legend = new am4charts.Legend();
+
+
+
+    chart.colors.step = 2;
+
+    var categoryAxis = chart.xAxes.push(new am4charts.CategoryAxis());
+    categoryAxis.dataFields.category = 'category';
+    categoryAxis.renderer.minGridDistance = 10;
+    categoryAxis.renderer.grid.template.location = 0;
+
+    var valueAxis = chart.yAxes.push(new am4charts.ValueAxis());  
+    valueAxis.min = 0;
+    valueAxis.renderer.minWidth = 35;
+
+    var series1 = chart.series.push(new am4charts.ColumnSeries());
+    series1.columns.template.width = am4core.percent(50);
+    series1.columns.template.tooltipText = '{name}: {valueY.value}';
+    series1.name = 'Pianned';
+    series1.dataFields.categoryX = 'category';
+    series1.dataFields.valueY = 'value1';
+    series1.stacked = false;
+
+    var series2 = chart.series.push(new am4charts.ColumnSeries());
+    series2.columns.template.width = am4core.percent(50);
+    series2.columns.template.tooltipText = '{name}: {valueY.value}';
+    series2.name = 'Complieted';
+    series2.dataFields.categoryX = 'category';
+    series2.dataFields.valueY = 'value2';
+    series2.stacked = false;
+
+  
+  
+  }); // end am4core.ready()
+}
+
+
+
+//pending-status
+if($('div').hasClass('pending-status-chart')) {
+  am4core.ready(function() {
+
+
+    var chart = am4core.create('pending-status', am4charts.XYChart);
+
+    chart.data = [
+      {
+        category: 'TPS',
+        value1: 10,
+        value2: 3,
+        value3: 3,
+      },
+      {
+        category: 'PDD',
+        value1: 2,
+        value2: 2,
+        value3: 0,
+      }
+    ];
+
+    chart.legend = new am4charts.Legend();
+
+
+
+    chart.colors.step = 2;
+
+    var categoryAxis = chart.xAxes.push(new am4charts.CategoryAxis());
+    categoryAxis.dataFields.category = 'category';
+    categoryAxis.renderer.grid.template.location = 0;
+
+    var valueAxis = chart.yAxes.push(new am4charts.ValueAxis());  
+    valueAxis.min = 0;
+    valueAxis.renderer.minWidth = 35;
+
+    var series1 = chart.series.push(new am4charts.ColumnSeries());
+    series1.columns.template.width = am4core.percent(50);
+    series1.columns.template.tooltipText = '{name}: {valueY.value}';
+    series1.name = 'Total';
+    series1.dataFields.categoryX = 'category';
+    series1.dataFields.valueY = 'value1';
+    series1.stacked = false;
+
+    var series2 = chart.series.push(new am4charts.ColumnSeries());
+    series2.columns.template.width = am4core.percent(50);
+    series2.columns.template.tooltipText = '{name}: {valueY.value}';
+    series2.name = 'Complieted';
+    series2.dataFields.categoryX = 'category';
+    series2.dataFields.valueY = 'value2';
+    series2.stacked = false;
+
+    var series3 = chart.series.push(new am4charts.ColumnSeries());
+    series3.columns.template.width = am4core.percent(50);
+    series3.columns.template.tooltipText = '{name}: {valueY.value}';
+    series3.name = 'Pending';
+    series3.dataFields.categoryX = 'category';
+    series3.dataFields.valueY = 'value2';
+    series3.stacked = false;
+  
+  }); // end am4core.ready()
 }
