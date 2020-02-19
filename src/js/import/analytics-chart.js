@@ -76,9 +76,9 @@ if($('div').hasClass('growth-chart')) {
 
   
     // Add scrollbar
-    chart.scrollbarX = new am4charts.XYChartScrollbar();
-    // chart.scrollbarX.parent = chart.bottomAxesContainer;
-  
+    var scrollbarX = new am4charts.XYChartScrollbar();
+    scrollbarX.series.push(columnSeries);
+    chart.scrollbarX = scrollbarX;
 
   
 
@@ -213,8 +213,9 @@ if($('div').hasClass('growth-chart-2')) {
 
   
     // Add scrollbar
-    chart.scrollbarX = new am4charts.XYChartScrollbar();
-    // chart.scrollbarX.parent = chart.bottomAxesContainer;
+    var scrollbarX = new am4charts.XYChartScrollbar();
+    scrollbarX.series.push(lineSeries);
+    chart.scrollbarX = scrollbarX;
 
     chart.data = data;
   
