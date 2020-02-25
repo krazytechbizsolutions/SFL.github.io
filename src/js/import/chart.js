@@ -789,3 +789,110 @@ if($('div').hasClass('debt-chart')) {
     
   }); // end am4core.ready()
 }
+
+
+
+
+
+
+
+//page achievement - #disbursement
+if($('div').hasClass('disbursement-chart')) {
+  am4core.ready(function() {
+
+    // Themes begin
+    
+    am4core.useTheme(am4themes_animated);
+    // Themes end
+  
+    // create chart
+    var chart = am4core.create('disbursement', am4charts.GaugeChart);
+    chart.startAngle = -90;
+    chart.endAngle = 270;
+    chart.innerRadius = am4core.percent(62);
+  
+  
+  
+    /**
+   * Normal axis
+   */
+  
+    var axis = chart.xAxes.push(new am4charts.ValueAxis());
+  
+    axis.min = 0;
+    axis.max = 100;
+    axis.strictMinMax = true;
+    axis.renderer.radius = am4core.percent(1);
+    axis.renderer.labels.template.radius = -200;
+    axis.renderer.labels.template.adapter.add('text', function(text) {
+      return text + '%';
+    });
+  
+    /**
+   * Axis for ranges
+   */
+  
+    var colorSet = new am4core.ColorSet();
+  
+    var axis2 = chart.xAxes.push(new am4charts.ValueAxis());
+    axis2.min = 0;
+    axis2.max = 100;
+    axis2.renderer.labels.template.disabled = true;
+
+  
+    var range0 = axis2.axisRanges.create();
+    range0.value = 0;
+    range0.endValue = 50;
+    range0.axisFill.fillOpacity = 1;
+    range0.axisFill.fill = am4core.color('rgb(78, 152, 246)');
+  
+    var range1 = axis2.axisRanges.create();
+    range1.value = 50;
+    range1.endValue = 100;
+    range1.axisFill.fillOpacity = 1;
+    range1.axisFill.fill = am4core.color('rgb(98, 101, 246)');
+
+  
+    /**
+   * Label
+   */
+  
+    var label = chart.radarContainer.createChild(am4core.Label);
+    label.fontSize = 11;
+    label.x = am4core.percent(50);
+    label.y = am4core.percent(100);
+    label.horizontalCenter = 'middle';
+    label.verticalCenter = 'middle';
+    label.text = '0%';
+  
+  
+    /**
+   * Hand
+   */
+  
+
+    var hand = chart.hands.push(new am4charts.ClockHand());
+    hand.axis = axis;
+    hand.innerRadius = am4core.percent(20);
+    hand.startWidth = 0;
+    hand.pin.disabled = true;
+    hand.value = 0;
+
+    hand.events.on('propertychanged', function(ev) {
+      range0.endValue = ev.target.value;
+      range1.value = ev.target.value;
+      axis.invalidate();
+    });
+
+  
+    setInterval(function() {
+      var value = 50;
+      label.text = value + '%';
+      var animation = new am4core.Animation(hand, {
+        property: 'value',
+        to: value
+      }, 1000, am4core.ease.cubicOut).start();
+    }, 2000);
+  
+  }); // end am4core.ready()
+}
