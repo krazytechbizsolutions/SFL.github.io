@@ -58,12 +58,14 @@ select
   img
     width: 57px
   span
-    font-size: 14px
+    font-size: 12px
     font-weight: bold
     color: #000
     position: absolute
     display: block
-    padding-bottom: 12px
+    top: 7px
+    left: 51%
+    transform: translate(-50%)
 
 
 
@@ -81,8 +83,95 @@ select
       width: 17px
       height: 17px
 
+.table
+  border-spacing: 1px 0
+  border-collapse: initial
+  td
+    padding: 8px 5px
+    border: 1px solid #EEEEEE
+    background: #EEEEEE
+    border-radius: 4px
+    text-align: center
+    vertical-align: middle
+  tr:nth-child(2n) td
+    background: #fff
+  th
+    background: #C8C8C8
+    font-weight: normal
+    padding: 8px 5px
+    width: 24%
+    border-radius: 4px
+    text-align: center
+    vertical-align: middle
+    table-layout: fixed
 
 
+  &-statistics
+    display: block
+    tr:nth-child(2n)
+      td
+        background: #fff
+    thead
+      display: block
+      tr
+        display: flex
+        width: 100%
+        border-radius: 8px
+        overflow: hidden
+        border: 1px solid #EEEEEE
+      th, td
+        background: #C8C8C8
+        font-size: 11px
+        padding: 10px 2px
+        width: 100%
+        text-align: center
+        +center
+        max-height: 35px
+        flex: 1
+        font-weight: normal
+      td, th
+        &:first-child
+          width: 90px
+          flex: 2
+      td:last-child
+        font-size: 8px
+        font-weight: bold
+    tbody
+      display: block
+      tr
+        display: flex
+        width: 100%
+        border-radius: 8px
+        overflow: hidden
+        border: 1px solid #EEEEEE
+        border-top: none
+        td
+          width: 100%
+          +center
+          font-size: 11px
+          padding: 10px 2px
+          background: #eee
+          flex: 1
+          text-align: center
+          &:first-child
+            width: 90px
+            flex: 2
+          span
+            font-size: 18px
+            margin-left: 10px
+            display: block
+            position: relative
+            top: 3px
+            font-weight: bold
+            &.top
+              color: #10D423
+            &.bottom
+              color: #D41010
+              transform: rotate(180deg)
+              top: -2px
+            &.middle
+              color: #1072D4
+              top: 0px
 
 
 .pages

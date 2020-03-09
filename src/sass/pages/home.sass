@@ -14,8 +14,18 @@
     position: absolute
     right: 5px
     top: 0
+    display: flex
+    justify-content: center
     img
       width: 44px
+    span
+      position: absolute
+      left: 50%
+      transform: translate(-50%)
+      display: block
+      font-size: 14px
+      font-weight: bold
+      bottom: 7px
   &__avatar
     border-radius: 50%
     border: 8px solid #fff
@@ -117,7 +127,7 @@
       &:first-child
         text-align: left
       &:last-child
-        text-align: right
+
         border-top-left-radius: 6px
     td
       text-align: center
@@ -181,6 +191,7 @@
   &__block
     display: flex
     flex-direction: column
+    
     width: 100%
     align-items: center
     .medal
@@ -213,7 +224,6 @@
     +center
     overflow: hidden
     margin-bottom: 20px
-    +relative-x
   #pie-chart-1, #pie-chart-2
     width: 200px
     height: 200px

@@ -1,0 +1,114 @@
+---
+title: Performance Analytics
+---
+extends layouts/_layout
+block content
+  // partial example
+  .analytics
+    .back
+      a(href="#")
+        +icon('arrow-left')
+        | Performance Analytics
+    .analytics__content
+      .analytics__title
+        h2 TPS/PDD Pending Status
+      .analytics__grid
+        div
+          span.first-span Lorem ipsum dolor sit
+          table
+            tr
+              td A >35
+              td(style="background:rgb(225, 238, 23)") 
+              td(style="background:rgb(225, 238, 23)")
+              td(style="background:rgb(145, 207, 76)")
+              td(style="background:rgb(3, 176, 76)").active 
+                +icon('star')
+              td(style="background:rgb(3, 176, 76)")
+            tr
+              td B >35
+              td(style="background:rgb(225, 238, 23)")  
+              td(style="background:rgb(225, 238, 23)") 
+              td(style="background:rgb(145, 207, 76)") 
+              td(style="background:rgb(3, 176, 76)") 
+              td(style="background:rgb(3, 176, 76)") 
+            tr
+              td C >35
+              td(style="background:rgb(225, 238, 23)")  
+              td(style="background:rgb(225, 238, 23)") 
+              td(style="background:rgb(145, 207, 76)") 
+              td(style="background:rgb(145, 207, 76)") 
+              td(style="background:rgb(145, 207, 76)") 
+            tr
+              td D >35
+              td(style="background:rgb(191, 1, 1)")  
+              td(style="background:rgb(191, 1, 1)") 
+              td(style="background:rgb(230, 47, 22)") 
+              td(style="background:rgb(230, 47, 22)") 
+              td(style="background:rgb(230, 47, 22)") 
+            tr
+              td E >35
+              td(style="background:rgb(191, 1, 1)")  
+              td(style="background:rgb(191, 1, 1)") 
+              td(style="background:rgb(230, 47, 22)") 
+              td(style="background:rgb(230, 47, 22)") 
+              td(style="background:rgb(230, 47, 22)") 
+            tr
+              td
+              td E
+              td D
+              td C
+              td B
+              td A
+        span.last-span Lorem ipsum dolor sit
+      .analytics__title
+        h2 NSOH Growth
+      .growth-chart-2
+        #growth-2
+      table.table
+        tr
+          td(colspan="4") NSOH Details
+        tr
+          td 
+          td Jan - 19
+          td Feb - 19
+          td Mar - 19
+        tr
+          td Opening NSOH
+          td 1623
+          td 1671
+          td 1714
+        tr
+          td Disbursal for the month
+          td 1623
+          td 1671
+          td 1714
+        tr
+          td Demand
+          td 1623
+          td 1671
+          td 1714
+        tr
+          td Pre-Closure
+          td 1623
+          td 1671
+          td 1714
+        tr
+          td Closing NSOH
+          td 1623
+          td 1671
+          td 1714
+        tr
+          td NSOH Growth
+          td 1623
+          td 1671
+          td 1714
+        tr
+          td Growth %
+          td 1623
+          td 1671
+          td 1714
+
+      a(href="#").analytics__btn Detailed Contribution
+
+
+      

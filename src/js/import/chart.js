@@ -228,8 +228,6 @@ if($('div').hasClass('closure-chart')) {
 if($('div').hasClass('pipeline-status-chart')) {
   am4core.ready(function() {
 
-    // Themes begin
-    am4core.useTheme(am4themes_animated);
     // Themes end
   
   
@@ -386,9 +384,6 @@ if($('div').hasClass('pipeline-status-chart')) {
 //critical-account
 if($('div').hasClass('critical-account-chart')) {
   am4core.ready(function() {
-
-    // Themes begin
-    am4core.useTheme(am4themes_animated);
     
     // Themes end
   
@@ -523,4 +518,381 @@ if($('div').hasClass('critical-account-chart')) {
   
   }); // end am4core.ready()
 
+}
+
+
+
+
+
+
+//promotional-activities
+if($('div').hasClass('promotional-activities-chart')) {
+  am4core.ready(function() {
+
+
+    var chart = am4core.create('promotional-activities', am4charts.XYChart);
+
+    chart.data = [
+      {
+        category: 'Customer',
+        value1: 2,
+        value2: 1,
+      },
+      {
+        category: 'Total',
+        value1: 2,
+        value2: 3,
+      },{
+        category: 'Customer-1',
+        value1: 1,
+        value2: 1,
+      },
+      {
+        category: 'Total-2',
+        value1: 2,
+        value2: 1,
+      }
+    ];
+
+    chart.legend = new am4charts.Legend();
+
+
+
+    chart.colors.step = 2;
+
+    var categoryAxis = chart.xAxes.push(new am4charts.CategoryAxis());
+    categoryAxis.dataFields.category = 'category';
+    categoryAxis.renderer.minGridDistance = 10;
+    categoryAxis.renderer.grid.template.location = 0;
+
+    var valueAxis = chart.yAxes.push(new am4charts.ValueAxis());  
+    valueAxis.min = 0;
+    valueAxis.renderer.minWidth = 35;
+
+    var series1 = chart.series.push(new am4charts.ColumnSeries());
+    series1.columns.template.width = am4core.percent(50);
+    series1.columns.template.tooltipText = '{name}: {valueY.value}';
+    series1.name = 'Pianned';
+    series1.dataFields.categoryX = 'category';
+    series1.dataFields.valueY = 'value1';
+    series1.stacked = false;
+
+    var series2 = chart.series.push(new am4charts.ColumnSeries());
+    series2.columns.template.width = am4core.percent(50);
+    series2.columns.template.tooltipText = '{name}: {valueY.value}';
+    series2.name = 'Complieted';
+    series2.dataFields.categoryX = 'category';
+    series2.dataFields.valueY = 'value2';
+    series2.stacked = false;
+
+  
+  
+  }); // end am4core.ready()
+}
+
+
+
+//pending-status
+if($('div').hasClass('pending-status-chart')) {
+  am4core.ready(function() {
+
+
+    var chart = am4core.create('pending-status', am4charts.XYChart);
+
+    chart.data = [
+      {
+        category: 'TPS',
+        value1: 10,
+        value2: 3,
+        value3: 3,
+      },
+      {
+        category: 'PDD',
+        value1: 2,
+        value2: 2,
+        value3: 0,
+      }
+    ];
+
+    chart.legend = new am4charts.Legend();
+
+
+
+    chart.colors.step = 2;
+
+    var categoryAxis = chart.xAxes.push(new am4charts.CategoryAxis());
+    categoryAxis.dataFields.category = 'category';
+    categoryAxis.renderer.grid.template.location = 0;
+
+    var valueAxis = chart.yAxes.push(new am4charts.ValueAxis());  
+    valueAxis.min = 0;
+    valueAxis.renderer.minWidth = 35;
+
+    var series1 = chart.series.push(new am4charts.ColumnSeries());
+    series1.columns.template.width = am4core.percent(50);
+    series1.columns.template.tooltipText = '{name}: {valueY.value}';
+    series1.name = 'Total';
+    series1.dataFields.categoryX = 'category';
+    series1.dataFields.valueY = 'value1';
+    series1.stacked = false;
+
+    var series2 = chart.series.push(new am4charts.ColumnSeries());
+    series2.columns.template.width = am4core.percent(50);
+    series2.columns.template.tooltipText = '{name}: {valueY.value}';
+    series2.name = 'Complieted';
+    series2.dataFields.categoryX = 'category';
+    series2.dataFields.valueY = 'value2';
+    series2.stacked = false;
+
+    var series3 = chart.series.push(new am4charts.ColumnSeries());
+    series3.columns.template.width = am4core.percent(50);
+    series3.columns.template.tooltipText = '{name}: {valueY.value}';
+    series3.name = 'Pending';
+    series3.dataFields.categoryX = 'category';
+    series3.dataFields.valueY = 'value2';
+    series3.stacked = false;
+  
+  }); // end am4core.ready()
+}
+
+
+
+
+
+
+
+if($('div').hasClass('debt-chart')) {
+  am4core.ready(function() {
+
+    // Themes begin
+    am4core.useTheme(am4themes_animated);
+    // Themes end
+    
+    // Create chart instance
+    var chart = am4core.create('debt', am4charts.XYChart);
+    chart.paddingTop = 20;
+    // Add data
+    chart.data = [{
+      'country': '[font-size: 7;]Aug-18',
+      'visits': 22,
+      'expenses': 8
+    }, {
+      'country': '[font-size: 7;]Aug-19',
+      'visits': 22,
+      'expenses': 9
+    }, {
+      'country': '[font-size: 7;]Aug-20',
+      'visits': 21,
+      'expenses': 10
+    }, {
+      'country': '[font-size: 7;]Aug-21',
+      'visits': 22,
+      'expenses': 8
+    }, {
+      'country': '[font-size: 7;]Aug-22',
+      'visits': 22,
+      'expenses': 8
+    }, {
+      'country': '[font-size: 7;]Aug-23',
+      'visits': 23,
+      'expenses': 20
+    }, {
+      'country': '[font-size: 7;]Aug-24',
+      'visits': 22,
+      'expenses': 22
+    }, {
+      'country': '[font-size: 7;]Aug-25',
+      'visits': 20,
+      'expenses': 27
+    }, {
+      'country': '[font-size: 7;]Aug-26',
+      'visits': 24
+    }, {
+      'country': '[font-size: 7;]Aug-27',
+      'visits': 28,
+      'expenses': 8
+    }, {
+      'country': '[font-size: 7;]Aug-28',
+      'visits': 27,
+      'expenses': 8
+    }, {
+      'country': '[font-size: 7;]Aug-29',
+      'visits': 26,
+      'expenses': 8
+    }];
+    
+    // Create axes
+    
+    var categoryAxis = chart.xAxes.push(new am4charts.CategoryAxis());
+    categoryAxis.dataFields.category = 'country';
+    categoryAxis.renderer.grid.template.location = 0.5;
+    categoryAxis.renderer.minGridDistance = 20;
+    
+    
+    
+    var valueAxis = chart.yAxes.push(new am4charts.ValueAxis());
+    
+    // Create series
+    var series = chart.series.push(new am4charts.ColumnSeries());
+    series.dataFields.valueY = 'visits';
+    series.dataFields.categoryX = 'country';
+    series.columns.template.tooltipText = '{categoryX}: {valueY}[/]';
+    series.columns.template.fillOpacity = 0.8;
+    
+    
+    var columnTemplate = series.columns.template;
+    columnTemplate.strokeWidth = 0;
+    columnTemplate.strokeOpacity = 1;
+
+
+    var femaleLabel = series.bullets.push(new am4charts.LabelBullet());
+    femaleLabel.label.text = '{valueY}';
+    femaleLabel.label.hideOversized = false;
+    femaleLabel.label.truncate = false;
+    femaleLabel.label.horizontalCenter = 'left';
+    femaleLabel.label.dx = -8;
+    femaleLabel.label.dy = -8;
+
+
+    var lineSeries = chart.series.push(new am4charts.LineSeries());
+    lineSeries.name = '[font-size: 8;]Company wide';
+    lineSeries.dataFields.valueY = 'expenses';
+    lineSeries.tensionX = 0.7;
+    lineSeries.dataFields.categoryX = 'country';
+
+
+
+
+    var range = valueAxis.axisRanges.create();
+    range.value = 30;
+    range.grid.stroke = am4core.color('#00E808');
+    range.grid.strokeWidth = 1;
+    range.grid.strokeOpacity = 1;
+    range.label.inside = true;
+    range.label.text = '[font-size: 8;baseline-shift: sub;]Refine wide';
+    range.label.fill = am4core.color('#000');
+    range.label.align = 'left';
+    range.label.verticalCenter = 'bottom';
+    range.grid.above = true;
+
+    var range2 = valueAxis.axisRanges.create();
+    range2.value = 20;
+    range2.grid.stroke = am4core.color('#E88300');
+    range2.grid.strokeWidth = 1;
+    range2.grid.strokeOpacity = 1;
+    range2.grid.above = true;
+    range2.label.inside = true;
+    range2.label.text = '[font-size: 8;baseline-shift: super;]Org wide';
+    range2.label.fill = am4core.color('#000');
+    range2.label.align = 'left';
+    range2.label.verticalCenter = 'top';
+    
+  }); // end am4core.ready()
+}
+
+
+
+
+
+
+
+//page achievement - #disbursement
+if($('div').hasClass('disbursement-chart')) {
+  am4core.ready(function() {
+
+    // Themes begin
+    
+    am4core.useTheme(am4themes_animated);
+    // Themes end
+  
+    // create chart
+    var chart = am4core.create('disbursement', am4charts.GaugeChart);
+    chart.startAngle = -90;
+    chart.endAngle = 270;
+    chart.innerRadius = am4core.percent(62);
+  
+  
+  
+    /**
+   * Normal axis
+   */
+  
+    var axis = chart.xAxes.push(new am4charts.ValueAxis());
+  
+    axis.min = 0;
+    axis.max = 100;
+    axis.strictMinMax = true;
+    axis.renderer.radius = am4core.percent(1);
+    axis.renderer.labels.template.radius = -200;
+    axis.renderer.labels.template.adapter.add('text', function(text) {
+      return text + '%';
+    });
+  
+    /**
+   * Axis for ranges
+   */
+  
+    var colorSet = new am4core.ColorSet();
+  
+    var axis2 = chart.xAxes.push(new am4charts.ValueAxis());
+    axis2.min = 0;
+    axis2.max = 100;
+    axis2.renderer.labels.template.disabled = true;
+
+  
+    var range0 = axis2.axisRanges.create();
+    range0.value = 0;
+    range0.endValue = 50;
+    range0.axisFill.fillOpacity = 1;
+    range0.axisFill.fill = am4core.color('rgb(78, 152, 246)');
+  
+    var range1 = axis2.axisRanges.create();
+    range1.value = 50;
+    range1.endValue = 100;
+    range1.axisFill.fillOpacity = 1;
+    range1.axisFill.fill = am4core.color('rgb(98, 101, 246)');
+
+  
+    /**
+   * Label
+   */
+  
+    var label = chart.radarContainer.createChild(am4core.Label);
+    label.fontSize = 11;
+    label.x = am4core.percent(50);
+    label.y = am4core.percent(100);
+    label.horizontalCenter = 'middle';
+    label.verticalCenter = 'middle';
+    label.text = '0%';
+  
+  
+    /**
+   * Hand
+   */
+  
+
+    var hand = chart.hands.push(new am4charts.ClockHand());
+    hand.axis = axis;
+    hand.innerRadius = am4core.percent(20);
+    hand.startWidth = 0;
+    hand.pin.disabled = true;
+    hand.value = 0;
+
+    hand.events.on('propertychanged', function(ev) {
+      range0.endValue = ev.target.value;
+      range1.value = ev.target.value;
+      axis.invalidate();
+    });
+
+  
+    setInterval(function() {
+      var value = 50;
+      label.text = value + '%';
+      var animation = new am4core.Animation(hand, {
+        property: 'value',
+        to: value
+      }, 1000, am4core.ease.cubicOut).start();
+    }, 2000);
+  
+  }); // end am4core.ready()
 }
